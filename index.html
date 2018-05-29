@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <title>Analizador Lexico</title>
+
 </head>
+
 <body>
-    
+    <table>
+
+        <tr>
+            <td colspan="3">
+                <textarea id="textoAGuardar" cols="80" rows="25"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="lex()">Analizar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Guardar Como: </td>
+            <td>
+                <input id="nombreArchivoAGuardar"></input>
+            </td>
+            <td>
+                <button onclick="guardarTextoComoArchivo()">Guardar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Seleccionar un archivo para cargar:</td>
+            <td>
+                <input type="file" id="archivoACargar">
+            </td>
+            <td>
+                <button onclick="cargarArchivo()">Cargar Archivo Seleccionado</button>
+                <td>
+        </tr>
+
+    </table>
+
+
 </body>
 <script src="main.js"></script>
 </html>
